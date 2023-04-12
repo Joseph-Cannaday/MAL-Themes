@@ -1,12 +1,16 @@
 @\import "https://malscraper.azurewebsites.net/covers/auto/presets/dataimagelinkafter";
-@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
 @\import "https://malscraper.azurewebsites.net/covers/auto/presets/datatitleafter"; 
+
+/*Import fonts; @\import is global*/
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+@\import "https://fonts.googleapis.com/css2?family=Gotu&display=swap";
 body {
   background-image: url(https://imgur.com/AvzSjfi.png);
   background-size: cover;
   background-attachment: fixed;
 }
 
+/*Custom Cursor*/
 * {
   cursor:url(https://imgur.com/4EdEa6c.png), auto;
 }
@@ -55,6 +59,7 @@ html {
   width:700px;
 }
 
+/*Custom Character Header; Varies by Status*/
 .header{
   position: fixed;
   bottom: -100px;
@@ -95,6 +100,7 @@ html {
     background-image:url(https://imgur.com/Qmh6P8q.png);
 }
 
+
 .list-unit .list-status-title {
   width:100%;
 }
@@ -126,6 +132,11 @@ html {
     color: rgb(29, 215, 72);
     border-bottom: 0;
     font-size:13px;
+}
+
+/* Makes edit-disabled text same as other text */
+.list-table .list-table-data a.edit-disabled {
+  color: white;
 }
 
 .list-table {
@@ -223,6 +234,7 @@ border-right-width: 0 !important;
     transition: opacity .8s linear, margin-left .5s ease, transform 1s ease-in-out;
 }
 
+/*Comment box for tags*/
 .list-table .list-table-data .data.tags {
     word-wrap: break-word;
     background-image: url(https://imgur.com/5d52cHR.png) !important;
@@ -254,6 +266,7 @@ animation-name: pop;
     pointer-events: none !important;
 color: black !important;}
 
+/* pop animation */
 @keyframes pop {
   0%   {        
             height:134px;
